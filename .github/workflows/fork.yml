@@ -15,9 +15,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Print test - chrome
-        run: exec 'test'
+        run: exec 'test chrome'
       - name: Print test - edge   
-        run: exec 'test'
+        run: exec 'test edge'
 
 
   deploy:
