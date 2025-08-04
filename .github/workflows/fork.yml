@@ -1,0 +1,27 @@
+name: fork workflow
+
+on: [fork]
+
+jobs:
+
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build 
+        run: exec 'build'
+
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: Print test - chrome
+        run: exec 'test'
+      - name: Print test - edge   
+        run: exec 'test'
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print deploy
+        run: exec 'deploy'
