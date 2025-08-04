@@ -1,1 +1,2 @@
-Adding for git pull synchronize workflow
+Adding for git pull synchronize workflow in feature_master
+
