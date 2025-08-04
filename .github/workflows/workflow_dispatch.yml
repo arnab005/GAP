@@ -1,0 +1,23 @@
+name: workflow dispatch
+
+on: workflow_dispatch
+
+jobs:
+
+  build:
+    runs-on: ubuntu_latest 
+    steps:
+      - name: Print build
+        run: exec 'build'
+
+  test:
+    runs-on: windows_latest
+    steps:
+      - name: Print test
+        run: exec 'test'
+  
+  deploy:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Print deploy
+        run: exec 'deploy'
