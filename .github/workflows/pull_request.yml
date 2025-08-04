@@ -1,0 +1,29 @@
+name: pull request workflow
+
+
+on: pull_request
+
+
+jobs:
+  build:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Print build
+         run: 'echo Build'
+
+
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: 'echo Test'
+
+
+  deploy:
+    runs-on: windows-latest
+    steps:
+      - name: Print deploy
+        run: 'echo Deploy'
+
+  
