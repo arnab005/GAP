@@ -1,4 +1,4 @@
-name: Pull_request_synchronize Workflow
+name: pull_request_synchronize Workflow
 
 
 on: 
