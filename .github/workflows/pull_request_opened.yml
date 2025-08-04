@@ -1,4 +1,4 @@
-name: Push Workflow
+name: Pull_request_opened Workflow
 
 
 on: 
