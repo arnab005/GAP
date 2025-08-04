@@ -11,7 +11,7 @@ jobs:
         run: echo 'build'
 
   test:
-    runs-on: windows-lates
+    runs-on: windows-latest
     steps:
       - name: Print test
         run: echo 'test'
