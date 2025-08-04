@@ -8,19 +8,16 @@ jobs:
     runs-on: ubuntu_latest 
     steps:
       - name: Print build
-        run: exec 'build'
+        run: echo 'build'
 
   test:
     runs-on: windows_latest
     steps:
       - name: Print test
-        run: exec 'test'
+        run: echo 'test'
   
   deploy:
     runs-on: ubuntu_latest
     steps:
       - name: Print deploy
-        run: exec 'deploy'
-
-
-
+        run: echo 'deploy'
