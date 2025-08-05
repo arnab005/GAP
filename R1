@@ -1,1 +1,4 @@
 push_branches_paths_ignore
+
+push_branches_ignore_with_tags.
+
