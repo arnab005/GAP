@@ -1,9 +1,9 @@
-name: pull_request_labelled Workflow
+name: pull_request_labeled Workflow
 
 
 on: 
   pull_request:
-     types: labelled
+     types: labeled
 
 jobs:
   build:
