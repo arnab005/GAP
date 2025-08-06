@@ -9,7 +9,7 @@ jobs:
          uses: actions/setup-java@v3.14.1
          with: 
           java-version: '17'
-          distibution: microsoft
+          distribution: microsoft
        - name: Print Java Version
          run: java -version
           
