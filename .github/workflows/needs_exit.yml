@@ -1,4 +1,4 @@
-name: needs
+name: needs_exit
 on: 
   push
 
