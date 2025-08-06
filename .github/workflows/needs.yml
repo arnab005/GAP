@@ -1,0 +1,24 @@
+name: needs
+on: 
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Print build
+        run: echo 'build'
+
+  test:
+    needs: build
+    runs-on: windows-latest
+    steps:
+      - name: Print test
+        run: echo 'test'
+  
+  deploy:
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print deploy
+        run: echo 'deploy'
