@@ -1,4 +1,4 @@
-name: env global variable
+name: vars global variable
 on:
   workflow_dispatch
 env:
