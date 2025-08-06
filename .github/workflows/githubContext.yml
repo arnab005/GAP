@@ -1,6 +1,6 @@
 name: Github Context
 on: 
-  workrkflow_dispatch
+  workflow_dispatch
 jobs:
   github_context:
     runs-on: ubuntu-latest
