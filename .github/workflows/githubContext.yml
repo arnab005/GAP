@@ -1,0 +1,49 @@
+name: Github Context
+on: 
+  workrkflow_dispatch
+jobs:
+  github_context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Info about Github
+        run: 
+          echo 'github details ${{github}}'
+          echo 'github action ${{github.action}}'
+          echo 'github action path ${{github.action_path}}'
+          echo 'github action ref ${{github.action_ref}}'
+          echo 'github action repository ${{github.action_repository}}'
+          echo 'github action status ${{github.action_status}}'
+          echo 'github actor ${{github.actor}}'
+          echo 'github actor id ${{github.actor_id}}'
+          echo 'github api url ${{github.api_url}}'
+          echo 'github base ref ${{github.base_ref}}'
+          echo 'github env ${{github.env}}'
+          echo 'github event ${{github.event}}'
+          echo 'github event name ${{github.event_name}}'
+          echo 'github event path ${{github.event_path}}'
+          echo 'github graphql url ${{github.graphql_url}}'
+          echo 'github head ref ${{github.head_ref}}'
+          echo 'github job ${{github.job}}'
+          echo 'github path ${{github.path}}'
+          echo 'github ref ${{github.ref}}'
+          echo 'github ref name ${{github.ref_name}}'
+          echo 'github ref protected ${{github.ref_protected}}'
+          echo 'github ref type ${{github.ref_type}}'
+          echo 'github repository ${{github.repository}}'
+          echo 'github repository id ${{github.repository_id}}'
+          echo 'github repository owner ${{github.repository_owner}}'
+          echo 'github repository owner id ${{github.repository_owner_id}}'
+          echo 'github repositoryUrl ${{github.repositoryUrl}}'
+          echo 'github retention days ${{github.retention_days}}'
+          echo 'github run id ${{github.run_id}}'
+          echo 'github run number ${{github.run_number}}'
+          echo 'github run attempt ${{github.run_attempt}}'
+          echo 'github secret source ${{github.secret_source}}'
+          echo 'github server url ${{github.server_url}}'
+          echo 'github sha ${{github.sha}}'
+          echo 'github token ${{github.token}}'
+          echo 'github triggering actor ${{github.triggering_actor}}'
+          echo 'github workflow ${{github.workflow}}'
+          echo 'github workflow ref ${{github.workflow_ref}}'
+          echo 'github workflow sha ${{github.workflow_sha}}'
+          echo 'github workspace ${{github.workspace}}'
