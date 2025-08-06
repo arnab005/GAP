@@ -12,7 +12,7 @@ jobs:
             os: ubuntu-latest
           - index:  1
             os: windows-latest
-          java-version: [17,20]
+        java-version: [17,20]
           
     steps:
       - name: Setup Java JDK
