@@ -7,6 +7,7 @@ jobs:
     steps:
       - name: Print Info about Github
         run: 
+          echo 'github details ${{github}}'
           echo 'github action ${{github.action}}'
           echo 'github action path ${{github.action_path}}'
           echo 'github action ref ${{github.action_ref}}'
