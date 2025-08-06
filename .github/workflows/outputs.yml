@@ -5,14 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     outputs: 
       message: ${{steps.set-message.outputs.greeting}}
+      text: ${{steps.set-message.outputs.no_greeting}}
     steps:
       - id: set-message
         run: 
           echo "greeting= Hello Welcome" >> $GITHUB_OUTPUT
-          echo "no_greeting= Not Welcome" >> $GITHUB_OUTPUT
+          echo "no_greeting= No Welcome" >> $GITHUB_OUTPUT
 
   dis-msg:
     needs: gen-msg
     runs-on: ubuntu-latest
     steps:
       - run: echo '${{needs.gen-msg.outputs.message}}'
+      - run: echo '${{needs.gen-msg.outputs.text}}'
