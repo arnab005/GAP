@@ -1,0 +1,24 @@
+name: Github Context Conditional
+on: 
+  workflow_dispatch
+jobs:
+  github_context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Info about Github
+        run: 
+          echo 'github repository ${{github.repository}}'
+          echo 'github repository id ${{github.repository_id}}'
+          echo 'github repositoryUrl ${{github.repositoryUrl}}'
+          echo 'github token ${{github.token}}'
+          echo 'github workflow ${{github.workflow}}'
+          echo 'github actor ${{github.actor}}'
+          echo 'github ref ${{github.ref}}'
+          echo 'github event name ${{github.event_name}}'
+          echo 'github run id ${{github.run_id}}'
+          echo 'github run number ${{github.run_number}}'
+      -  name: Examples
+         if: github.ref == 'refs/heads/master'
+         run: echo 'deploy'
+      -  if: github.event_name == 'pull_request' 
+         run: echo 'trigger the workflow' 
