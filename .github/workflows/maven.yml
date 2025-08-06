@@ -1,0 +1,19 @@
+name: Java setup
+
+
+on: 
+  workflow_dispatch
+
+jobs:
+  java-setup:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Setup Java JDK
+         uses: actions/setup-java@v3.14.1
+         with: 
+          java-version: '17'
+          distibution: microsoft
+       - name: Print Java Version
+         run: echo java --version  
+          
+      
