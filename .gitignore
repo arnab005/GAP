@@ -1,0 +1,9 @@
+# Ignore Maven target directory
+target/
+
+# Ignore IDE config files
+.idea/
+*.iml
+
+# Ignore environment files
+.env
