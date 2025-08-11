@@ -17,7 +17,7 @@ jobs:
         working-directory: student-course
       - name: Show current directory
         run: pwd
-      - run: mkdir staging && cp target/*.jar staging
+      - run: mkdir staging && cp student-course/target/*.jar staging
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2
         with:
