@@ -14,6 +14,7 @@ jobs:
           java-version: 21
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
+        working-directory: student-course
       - name: Show current directory
         run: echo pwd
       - run: mkdir staging && cp target/*.jar staging
