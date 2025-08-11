@@ -1,4 +1,4 @@
-name: Java CI_Non-conterization with Maven
+name: Java CI_Non-conterization
 on:
   workflow_dispatch
 jobs:
