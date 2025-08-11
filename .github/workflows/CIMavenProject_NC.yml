@@ -14,7 +14,7 @@ jobs:
           java-version: 21
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
-        working-directory: student-course
+      - run: echo pwd
       - run: mkdir staging && cp target/*.jar staging
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2
