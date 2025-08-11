@@ -16,7 +16,7 @@ jobs:
         run: mvn --batch-mode --update-snapshots verify
         working-directory: student-course
       - name: Show current directory
-        run: echo pwd
+        run: pwd
       - run: mkdir staging && cp target/*.jar staging
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.6.2
