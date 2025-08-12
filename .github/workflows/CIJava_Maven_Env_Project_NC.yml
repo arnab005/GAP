@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
     inputs:
       TARGET_ENVIRONMENT:
-      type: environment
-      default: dev
+        type: environment
+        default: dev
 jobs:
   CI_Non-conterization_build:
     runs-on: ubuntu-latest
