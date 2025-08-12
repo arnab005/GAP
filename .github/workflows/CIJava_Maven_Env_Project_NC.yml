@@ -1,4 +1,4 @@
-name: Java CI_Non-conterization
+name: Java CI_ENV_Non-conterization
 on:
   workflow_dispatch:
     inputs:
